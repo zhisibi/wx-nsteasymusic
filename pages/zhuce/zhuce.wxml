@@ -1,0 +1,29 @@
+<view class="zhucebox">
+	
+	<view>
+	<view class="phonebox">
+		<view>手机：</view>
+		<input class="inpuut" type="text" value="{{phone}}" bindinput="inputphone" bindblur="phonecheck"/>
+		
+	</view>	
+	<view class="tishi">请输入手机号</view>
+	
+	</view>
+	<view class="passbox">
+		<view>密码：</view> 
+		<input  class="inpuut" type="text" value="{{password}}" bindinput="inputpassword"/>
+	</view>	
+	<view class="tishi">请输入密码</view>
+	<view class="passwodbox">
+		<view>昵称：</view>	
+		<input class="inpuut" type="text" value="{{nickname}}" bindinput="inputnickname"/>
+	</view>
+	<view class="tishi">请输入昵称</view>
+	<view class="passwodbox">
+		<view>验证：</view>	
+		<input class="inpuut" type="text" value="{{nickname}}" bindinput="inputcaptcha"/>
+	</view>
+	<view class="tishi">请输入验证码</view>
+	<view class="yanzhme" bindtap="getcaptcha">获取验证码</view>
+	<view class="zhucebt">注册</view>
+</view>

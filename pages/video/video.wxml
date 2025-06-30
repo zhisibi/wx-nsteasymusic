@@ -1,0 +1,21 @@
+<!--pages/video/video.wxml-->
+<button bindtap="getdata" type="primary">获取数据</button>
+<view class="searchbox">
+	<view class="searchtext" ><image class="searchimg" src="/image/search.png" bindtap="getserchword"></image>{{searchword}} </view>
+	
+
+</view>
+
+<view>
+<scroll-view scroll-into-view="{{toview}}" scroll-x="true" enable-flex="true" class="csrview">
+	<view wx:for="{{grouplist}}" wx:key="index">
+		<view class="item {{item.active==true? 'activeitem':''}}" bindtap="tapgroup" data-index="{{index}}" data-id="{{item.id}}" id="{{'item'+index}}">{{item.name}}</view>
+	</view>
+</scroll-view>
+</view>
+
+<view wx:for="{{videolist}}" wx:key="index" >
+<video src="item.url"></video>
+<view>{{item.title}}</view>
+<view>{{item.name}}</view>
+</view>

@@ -1,0 +1,58 @@
+
+<view class="playerbox"> 
+	<view class="name">{{name}}</view>
+	<view class="autho">{{author}}</view>
+  <image bindtap="play" class="gan {{isplay?'playgan':''}}" src="/image/gan.png" ></image>
+	<view class="infoimagebox {{isplay &&'infoimageboxAnimation'}}">
+ 
+	<image  class="infoimage" src="{{imagesrc}}" style="animation: linear; transform: rotate(360deg);transition-duration: 1s; transition-timing-function: linear;"></image>
+	</view>
+	<view class="control">
+		<view class="slider">
+		<slider class="slider" block-color="red" block-size="10" value="{{slidervalue}}" bindchange="gototimeplay"></slider>
+		</view>
+		<view class="audiotime">
+		
+		<view class="audiocurrentTime">{{audiocurrentTime}}s</view>
+		<view class="audioduration">{{audioduration}}s</view>
+		</view>
+		<!-- <audio src="{{crx}}"
+		controls="true"
+		poster="{{imagesrc}}"
+		name="{{name}}"
+		author="{{author}}"
+		bindplay="play"
+		id="myaudio" 
+		
+		></audio> -->
+		<view class="player">
+				
+	
+				<view> 
+				<image  class="image1" src="/image/suiji.png" mode="widthFix"></image>
+				</view>
+				<view> 
+				<image  class="image1" src="/image/befor.png" mode="widthFix" bindtap="previoussong"></image>
+				</view>
+				<view wx:if="{{isplay}}"> 
+					<image  class="image2"  src="/image/stop.png" mode="widthFix" bindtap="pause"></image>
+				</view>
+				<view wx:else> 
+				<image  class="image2"  src="/image/play.png" mode="widthFix" bindtap="play"></image>
+				</view>
+				<view> 
+				<image  class="image1" src="/image/next.png" mode="widthFix" bindtap="nextsong"></image>
+				</view>
+				<view>
+				<navigator open-type="navigate" url="/pages/playlist/playlist">
+				<image  class="image1" src="/image/playlist.png" mode="widthFix"></image>
+				</navigator> 
+				</view>
+			
+
+		</view>	
+	</view>			
+</view>
+	
+
+

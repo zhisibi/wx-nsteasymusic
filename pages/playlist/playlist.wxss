@@ -1,0 +1,67 @@
+page{
+	background-color: rgb(245, 245	, 245);
+}
+.songslistimage1{
+	width: 750rpx;
+	height: 400rpx;
+}
+.songslisttitle{
+	height: 62rpx;
+	line-height: 62rpx;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 100rpx;
+	padding-right:50rpx ;
+	align-items: center;
+}
+.palyall
+{
+	display: flex;
+	align-items: center;
+	font-size: 28rpx;
+
+}
+.gdname{
+
+font-weight: 600;
+text-align: center;
+color: red;
+font-size: 40rpx;
+}
+.songslistimage{
+	width: 750rpx
+	
+}
+.songslist{
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	margin: 0 auto ;
+	margin-top: 20rpx;
+	padding-bottom: 20rpx;
+	padding-right: 20rpx;
+	padding-left: 20rpx;
+	color: rgb(66, 50, 36);
+	border-bottom: seagreen 1px solid;
+	line-height: 40rpx;
+	height: 40rpx;
+	font-size: 26rpx;
+	
+}
+.songslistimagebox
+{
+	display: flex;
+	margin-left: 25rpx;
+
+}
+.songslistimage{
+	width: 40rpx;
+	margin-left: 10rpx;
+}
+.songslistname
+
+{width: 660rpx;
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}

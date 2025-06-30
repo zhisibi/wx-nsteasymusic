@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<view class="searchbox">
+<input bindblur="search" bindtap="clearinput" bindinput="inputsearch" type="text" value="{{keywoed}}" style="border: 1px solid black;width: 700rpx;height: 60rpx; border-radius: 10rpx;"/>
+<image bindtap="search" src="/image/search.png" style="width: 60rpx; height: 60rpx; "></image>
+</view>
+<view class="searchlist"  wx:for="{{searchliset}}" wx:key="index">
+	
+	<image class="searchlistimage" src="{{item.al.picUrl}}" mode="widthFix"  style="width: 80rpx;"></image>
+	<view bindtap="addtoplay" data-id="{{item.id}}">{{item.name}}</view>
+	
+	<image bindtap="addplaylist" data-id="{{item.id}}" class="addtoplaylistimage"  src="/image/addplaylist.png" mode="widthFix" style="width: 40rpx;"></image>
+	<image bindtap="addtoplay"  data-id="{{item.id}}" class="playimage" src="/image/play.png" mode="widthFix" style="width: 40rpx;"></image>
+</view>	

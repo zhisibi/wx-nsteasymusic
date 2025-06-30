@@ -1,0 +1,44 @@
+<!--pages/login/login.wxml-->
+<view  class="box">
+	<view wx:if="{{isphone==true}}" class="phonelogin">
+		<view class="phone1">手机号登录</view>
+		<view class="phone2"> 
+
+			手机：<input class="text1"  bindtap="clearphone" bindinput="phoneinput" value="{{phone}}" type="text"/>
+			<!-- <view class="getyanzhegma" bindtap="getyzhm" >获取验证码</view> -->
+		</view>
+		<view class="yanzhengma">
+			密码：<input class="text2" bindtap="clearyzm" bindinput="yzminput" value="{{yzhm}}" type="text" password="true"/>
+			
+		</view>
+		<view>请输入登录密码</view>
+		<view class="dlbt" bindtap="dl">
+			<view>登</view>
+			<view>录</view>
+
+		</view>
+		<view class="zhhdl" bindtap="zhhdl">邮箱登录</view> 
+	</view>
+	<view wx:else  class="phonelogin">
+		<view class="phone1">账号登录</view> 
+		<view class="zh2">
+		
+			邮箱:<input class="text3" value="{{email}}" bindtap="clearemail"  bindinput="inputemail" type="text"/>
+			
+		</view>
+		<view class="mima">
+			密码:<input  class="text3" value="{{password}}" bindtap="clearpassword"  bindinput="inptupassword" password="true" type="text"/>
+		
+		</view>
+		<view>请输入登录密码</view>
+		<view class="dlbt" bindtap="emaillogin">
+			<view>登</view>
+			<view>录</view>
+
+		</view>
+		<view class="zhhdl" bindtap="shjhdl">手机号登录</view> 
+	</view>
+
+	
+
+</view>

@@ -1,0 +1,101 @@
+page{
+	background-color: rgb(238, 150, 150);
+}
+.box
+{
+	width: 75%;
+	background-color: white;
+	border-radius: 30rpx;
+	margin:  0 auto;
+	margin-top: 200rpx;
+	padding: 30rpx;
+}
+.phone1
+{
+	font-size: 40rpx;
+	margin-left: 30rpx;
+	margin-bottom: 20rpx;
+}
+.phone2
+{
+	display: flex;
+	align-items: center;
+
+}
+.text1
+{
+	border: 1px solid gainsboro;
+	width: 440rpx;
+	height: 46rpx;
+	margin: 20rpx 10rpx 20rpx 10rpx;
+	line-height: 46rpx;
+}
+.yanzhengma
+{
+	display: flex;
+	align-items: center;
+}
+.text2
+{
+	border: 1px solid gainsboro;
+	line-height: 46rpx;
+	width: 440rpx;
+	height: 46rpx;
+	margin: 20rpx 10rpx 20rpx 10rpx;
+}
+.getyanzhegma{
+	background-color: gold;
+	border-radius: 10rpx;
+	padding: 10rpx;
+	font-size: 24rpx;
+}
+.dlbt
+{
+	display: flex;
+	justify-content: center;
+	background-color: greenyellow;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	border-radius: 20rpx;
+	font-weight: 600;
+}
+.dlbt view
+{
+	margin-right: 30rpx;
+	margin-left: 30rpx;
+
+}
+.zhhdl
+{
+	font-size: 24rpx;
+	color: rgb(152, 219, 203);
+}
+
+.zh2
+{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+
+}
+.mima
+{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.text3
+{
+	border: 1px solid gainsboro;
+	width: 450rpx;
+	height: 46rpx;
+	line-height: 46rpx;
+	margin: 20rpx 20rpx 20rpx 10rpx;
+}
+
+

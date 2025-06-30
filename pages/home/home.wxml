@@ -1,0 +1,126 @@
+<view class="searchbox">
+<navigator class="searchtext" open-type="navigate" url="/pages/search/search">{{searchword}}<image class="searchimg" src="/image/search.png" bindtap="getserchword"></image> </navigator>
+
+</view>
+<!-- <view style="height: 60rpx;"></view> -->
+<!-- 轮播图 -->
+<view class="wiperbox">
+<swiper class="wiper" autoplay="true" indicator-dots="true" interval="3000" indicator-active-color="red">
+	<swiper-item wx:for="{{swplist}}" wx:key="index">
+	<image class="wiperimg" src="{{item.imageUrl}}" ></image>
+	</swiper-item>
+</swiper>
+</view>
+
+<!-- 导航列表 -->
+<view class="dhbox">
+	<scroll-view scroll-x="true" enable-flex="true" class="dhbox">
+	<view  class="scrollviewlist" wx:for="{{belllist}}" wx:key="key">
+		<image class="dhscrollviewlistimg" src="{{item.iconUrl}}" mode="widthFix"></image>
+		<view>{{item.name}}</view>
+	</view>
+</scroll-view>
+
+</view>
+<!-- 推荐歌曲 -->
+<view >
+	<view class="titlebox">
+		<view class="tuijian">今日推荐
+		</view>
+			<view class="more">
+				<view>更多</view>
+				<view><image src="/image/jiantou.png" style="width: 30rpx;" mode="widthFix"></image></view>
+		</view>
+	</view>
+	<scroll-view scroll-x class="scrollview" enable-flex="true">
+		<navigator url="/pages/songs/songs?id={{item.id}}"  class="scrollviewlist" wx:for="{{getscrolllist}}" wx:key="index">
+			<image class="scrollviewlistimage" src="{{item.picUrl}}" mode="widthFix"></image>
+			<view>{{item.name}}</view>
+		</navigator>
+	</scroll-view>
+
+</view>
+<!-- 排行榜 -->
+<view >
+	<view class="titlebox">
+		<view class="tuijian">排行榜
+		</view>
+			<view class="more">
+				<view>更多</view>
+				<view><image src="/image/jiantou.png" style="width: 30rpx;" mode="widthFix"></image></view>
+		</view>
+	</view>
+	<!-- 排行榜轮播图 -->
+	<view  class="phbswiperbox">
+	<swiper class="swiperitem" 	next-margin="80rpx" previous-margin="10rpx"  circular="true" >
+		<swiper-item class="swiperitem1"  wx:for="{{paihangbanglist}}" wx:key="index">
+			
+				<view  class="swiperbox1">
+					<view class="swiperitemname1">
+					
+					<view>{{item.name}}</view>
+					<navigator url="/pages/songs/songs?id={{item.id}}"><image src="/image/jiantou.png" style="width: 30rpx;" mode="widthFix"></image></navigator>
+					</view>
+					<view class="swiperlistbox1"  wx:for="{{item.tracks}}" wx:for-item="item1"  wx:for-index="index1" wx:key="index1" bindtap="toplay" data-id="{{item1.id}}">
+						<image class="swiperimage1" src="{{item1.al.picUrl}}"></image>
+						<view class="swipername1">
+							<view>{{index1+1}}</view>
+							<view>{{item1.al.name}}</view>
+						
+						
+						</view>
+						
+					</view>
+				</view>
+			
+		</swiper-item>
+	</swiper>
+</view>
+</view>
+<view class="foot"></view>
+
+
+<!-- 播放器 -->
+
+< view  class="playerbox"> 
+	<view class="infobox">
+		<view class="infoimage">
+			<image  class="infoimage" src="{{imagesrc}}"></image>
+		</view>
+		
+		< navigator open-type="navigate" url="/pages/paly/paly"  class="nameautho">
+				<view class="name">{{name}}</view>
+				<view class="autho">{{author}}</view>
+		</navigator>
+		<view class="info">
+			<view class="player">
+			
+				<view wx:if="{{isplay}}"> 
+					<image  class="imag2"  src="/image/stop.png" mode="widthFix" ></image>
+				</view>
+				<view wx:else> 
+				<image  class="imag2"  src="/image/play.png" mode="widthFix" ></image>
+				</view>
+				<view> 
+				<image  class="imag1" src="/image/next.png" mode="widthFix" bindtap="stop"></image>
+				</view>
+				<navigator open-type="navigate" url="/pages/playlist/playlist"> 
+				<image  class="imag1" src="/image/playlist.png" mode="widthFix"></image>
+				</navigator >
+			</view>	
+
+		</view>	
+	</view>
+	
+
+</view>
+
+
+
+
+
+
+
+
+
+

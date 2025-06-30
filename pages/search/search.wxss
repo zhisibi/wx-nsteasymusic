@@ -1,0 +1,42 @@
+page{
+	background-color: rgb(245, 245, 245);
+}
+.searchbox{
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	height: 80rpx;
+	align-items: center;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+}
+.searchlist
+{
+	display: flex;
+	border-bottom: 1px solid rgb(196, 193, 193);
+	height: 100rpx;
+	align-items: center;
+	font-size: 26rpx;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.searchlistimage
+{
+	margin-right: 50rpx;
+	margin-left: 20rpx;
+	border-radius: 20rpx;
+}
+.addtoplaylistimage
+{
+	/* border: 1px solid red; */
+	position: absolute;
+	right: 80rpx;
+}
+.playimage
+{
+	/* border: 1px solid red; */
+	position: absolute;
+	right: 20rpx;
+}

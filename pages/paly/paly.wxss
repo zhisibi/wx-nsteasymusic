@@ -1,0 +1,121 @@
+.playerbox
+{
+	width: 100%;
+	height: 1200rpx;
+	background-color: rgb(226, 176, 233);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.player
+{
+	
+	width: 90%;
+	
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 50rpx;
+	justify-content: space-between;
+}
+.image1
+{
+	width: 40rpx;
+}
+.image2
+{
+	width: 80rpx;
+}
+
+.infobox
+{
+	display: flex;
+	align-items: center;
+}
+.name{
+	margin-top: 80rpx;
+	font-weight: 600;
+}
+.autho{
+	margin-top: 10rpx;
+	font-weight: 400;
+	font-size: 26rpx;
+}
+.gan{
+height: 200rpx;
+width: 100rpx;
+margin-top: 40rpx;
+transform: rotate(-60deg);
+transform-origin: 30rpx 30rpx;
+}
+.playgan{
+  height: 250rpx;
+  width: 100rpx;
+  margin-top: 40rpx;
+  transform: rotate(-25deg);
+  transform-origin: 20rpx 0rpx;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  z-index: 3;
+  }
+
+.infoimagebox{
+
+	width: 450rpx;
+  height: 450rpx;
+  position: fixed;
+  top: 350rpx;
+	background-color: rgb(59, 57, 57);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 450rpx;
+	border: 5px solid rgb(151, 144, 144);
+	
+}
+.infoimageboxAnimation
+{
+  animation: disc 4s linear infinite;
+  animation-delay: 0.5s;
+}
+/* @keyframes  设置动画 帧
+1 from to 使用与简单的东湖 只有起始帧和结束帧  比如 北京到上海 直达
+2 百分比 用于复杂的动画  动画不止2帧   北京-上海》北京 天津 深圳 上海
+0%-100%可以任意拆分
+*/ 
+
+@keyframes disc {
+from{transform: rotate(0deg);}
+to{
+transform: rotate(360deg);
+
+}
+}
+.infoimage{
+	
+	width: 300rpx;
+	height: 300rpx;
+	border-radius: 300rpx;
+}
+.control
+{
+	position: fixed;
+	bottom: 50rpx;
+	width: 700rpx;
+	display: flex;
+	flex-direction: column;
+	
+}
+.audiotime
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 24rpx;
+	margin-top: -35rpx;
+	margin-left: 35rpx;
+	width: 90%;
+	color: rgb(112, 109, 109);
+	/* margin: 0 auto; */
+}

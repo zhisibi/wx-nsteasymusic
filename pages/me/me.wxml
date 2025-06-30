@@ -1,0 +1,85 @@
+<view wx:if="{{islogin==false}}">
+<view  class="login" >
+	<image class="loginimage1" src="/image/login.png" ></image>
+	<navigator class="logintextbox" bindtap="gotolgin" url="/pages/login/login">
+		<view class="logintext1">点击登录</view>
+		<view class="logintext2">登录享受高品质音乐</view>
+	</navigator>
+	
+</view>
+<navigator class="nocount" url="/pages/zhuce/zhuce">没有账号？点击注册</navigator>
+</view>
+<view wx:else>
+	<image  class="loginimagebackground" src="{{myinfo.backgroundUrl}}" ></image>
+	<view class="loginbox">
+		<view  class="loginimageview" >
+			
+			<image  class="loginimage" src="{{myinfo.avatarUrl}}" ></image>
+		</view>
+		<view class="login" url="/pages/login/login">
+		
+		<view class="logintextbox">
+			<view class="logintext1">{{myinfo.nickname}}</view>
+			<view class="logintext2">用户ID：{{myinfo.userId}}</view>
+			<view class="logintext4">{{myinfo.follows}}关注|0粉丝|Lv{{myinfo.gender}}</view>
+			
+			<view class="logintext3" bindtap="logout">退出登录</view>
+		</view>
+</view>
+</view>
+<view class="logintext4" bindtap="aaa">获取数据</view>
+</view>
+
+<scroll-view class="scrollviewbox" scroll-x="true" enable-flex="true" >
+	
+		<view class="view1">
+			<image class="scrollviewimage"  src="/image/love.png" mode="widthFix"></image>
+			<view>收藏</view>
+		</view>
+		<view class="view1">
+			<image class="scrollviewimage" src="/image/bendi.png" mode="widthFix"></image>
+			<view>本地</view>	
+		</view>
+		<view class="view1">
+			<image class="scrollviewimage" src="/image/download.png" mode="widthFix"></image>
+			<view>下载</view>
+		</view>
+		<view class="view1">
+			<image class="scrollviewimage" src="/image/dingyue.png" mode="widthFix"></image>
+			<view>订阅</view>
+		</view>
+		<view class="view1">
+		<image class="scrollviewimage" src="/image/zuijing.png" mode="widthFix"></image>
+		<view>最近播放</view>
+		</view>
+	
+</scroll-view  >
+<view wx:if="{{islogin}}">最近播放
+<scroll-view scroll-x="true" enable-flex="true"  class="scrollview2">
+<view wx:for="{{recordlist}}" wx:key="index" >
+	<image src="{{item.song.al.picUrl}}"></image>
+	<view>{{item.song.al.name}}</view>
+</view>
+</scroll-view>
+</view>
+<view wx:if="{{islogin}}">
+	<view class="mysclist">我收藏的歌单</view>
+	<scroll-view scroll-y class="scrollview">
+	<navigator class="scrollviewlist" wx:for="{{mysclist}}" wx:key="index" url="/pages/songs/songs?id={{item.id}}" open-type="navigate" >
+	<image class="scrollviewlistimg" src="{{item.coverImgUrl}}"></image>
+	<view class="scrollviewlistname">{{item.name}}</view>
+	</navigator>
+	
+	</scroll-view>	
+</view>
+<view wx:if="{{islogin}}">
+	<view class="mysclist">我收藏的电台</view>
+	<scroll-view scroll-y class="scrollview">
+		<view wx:for="{{follows}}" wx:key="index">
+			<view class="scrollviewlist" >{{item.nickname}}</view>
+			<view class="scrollviewlist1">简介：{{item.signature}}</view>
+		</view>
+	
+	
+	</scroll-view>	
+</view>

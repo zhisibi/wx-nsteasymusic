@@ -1,0 +1,47 @@
+{
+  "pages":[
+   
+    "pages/home/home",
+    "pages/me/me",
+    "pages/paly/paly",
+    "pages/gddetail/gddetail",
+    "pages/playlist/playlist",
+    "pages/login/login",
+    "pages/songs/songs",
+    "pages/zhuce/zhuce",
+    "pages/video/video",
+    "pages/search/search",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ed6a0c",
+    "navigationBarTitleText": "博世音乐",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    
+    
+    "backgroundColor": "#f7f8fa",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "音乐",
+      "iconPath": "/image/music1.png",
+      "selectedIconPath": "/image/music2.png"
+      
+    },
+    
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/image/me1.png",
+      "selectedIconPath": "/image/me2.png"
+      
+    }
+  ]
+  },
+ 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio"]
+}

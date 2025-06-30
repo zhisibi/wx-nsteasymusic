@@ -1,0 +1,21 @@
+<!--pages/songs/songs.wxml-->
+<image  class="songslistimage1" src="{{songslist[0].al.picUrl}}"  ></image>
+<view class="songslisttitle">
+<view class="gdname">{{gdname}}</view>
+<view class="palyall" bindtap="addallsongtoplaylist">添加到播放列表<image src="/image/addplaylist.png" style="width: 40rpx;" mode="widthFix"></image></view>
+</view>
+
+
+<view class="songslistbox" wx:for="{{songslist}}" wx:key="index">
+	<view class="songslist">
+	
+		<view class="songslistname" bindtap="addtoplay"  data-id="{{item.id}}"> {{item.name}}</view>
+		<!-- <view class="songslistname"> Id:{{item.id}}</view> -->
+		<view class="songslistimagebox">
+			
+		<image class="songslistimage"src="/image/addplaylist.png" mode="widthFix" bindtap="addplaylist" data-id="{{item.id}}"></image>
+		<image class="songslistimage"src="/image/play.png" mode="widthFix" bindtap="addtoplay" data-id="{{item.id}}"></image>
+		</view>
+	</view>
+</view>
+

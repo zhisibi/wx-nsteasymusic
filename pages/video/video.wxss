@@ -1,0 +1,64 @@
+page
+{
+	background-color: whitesmoke;
+}
+.searchbox
+{
+	position: relative;
+}
+.searchtext
+{
+	border: 1px solid black;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 60rpx;
+	height: 60rpx;
+	border-radius: 10rpx;
+	font-weight: 600;
+	font-family: '微软雅黑';
+}
+.searchimg
+{ line-height: 40rpx;
+	height: 40rpx;
+	width: 40rpx;
+	position: absolute;
+	right: 430rpx;
+	top: 10rpx;
+}
+.csrview
+{
+	display: flex;
+	flex-wrap: nowrap;
+	height: 62rpx;
+	margin-top: 20rpx;
+	/* width: 2000rpx; */
+}
+.item
+{
+	width: 150rpx;
+	
+	padding: 10rpx;
+	white-space: nowrap;
+	overflow: hidden;
+
+	
+	text-align: center;
+	align-items: center;
+	background-color: white;
+	
+
+}
+.activeitem{
+	width: 150rpx;
+	height: 60rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	border-bottom: 1px solid red; 
+	box-sizing: border-box;
+	background-color: white;
+	align-items: center;
+	text-align: center;
+	
+}

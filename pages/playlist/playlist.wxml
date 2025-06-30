@@ -1,0 +1,21 @@
+<!--pages/songs/songs.wxml-->
+
+<view class="songslisttitle">
+<view class="gdname">我的播放列表</view>
+<!-- <view class="palyall" bindtap="addallsongtoplaylist">全部播放<image src="/image/play.png" style="width: 40rpx;" mode="widthFix"></image></view> -->
+</view>
+
+
+<view class="songslistbox" wx:for="{{playlist}}" wx:key="index">
+	<view class="songslist">
+	
+		<view class="songslistname"> {{item.name}}</view>
+		<!-- <view class="songslistname"> Id:{{item.id}}</view> -->
+		<view class="songslistimagebox">
+			
+		<image class="songslistimage"src="/image/remove.png" mode="widthFix" bindtap="remove" data-id="{{index}}"></image>
+		<image class="songslistimage"src="/image/play.png" mode="widthFix" bindtap="addtoplay" data-id="{{item.id}}"></image>
+		</view>
+	</view>
+</view>
+

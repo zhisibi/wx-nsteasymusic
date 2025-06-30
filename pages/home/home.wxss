@@ -1,0 +1,333 @@
+page
+{
+	background-color: whitesmoke;
+}
+/* .searchbox{
+position: fixed;
+top: 0rpx;
+right: 0rpx;
+width: 100%;
+
+} */
+.searchtext
+{
+	border: 1px solid black;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 60rpx;
+	height: 60rpx;
+	border-radius: 10rpx;
+	font-weight: 600;
+	font-family: '微软雅黑';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.searchimg
+{ line-height: 60rpx;
+	height: 40rpx;
+	width: 40rpx;
+	
+	box-sizing: border-box;
+	
+	
+}
+.wiperbox{
+	width: 100%;
+	height: 300rpx;
+}
+.wiper{
+	width: 100%;
+	height: 300rpx;
+}
+.wiperimg
+{
+	width: 100%;
+	height: 300rpx;
+}
+.dhbox{
+	/* width: 90%; */
+	display: flex;
+	margin: 10rpx;
+	height: 160rpx;
+	
+}
+.dhboxview
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40rpx;
+		margin-bottom: 20rpx;
+} 
+.dhboxview 
+{
+	font-size: 25rpx;
+} 
+
+.dhscrollviewlistimg
+{
+	width: 100rpx;
+	height:  60rpx;
+	margin-bottom: 5rpx;
+	border-radius: 60rpx;
+	border: 1px solid red;
+	background-color: red;
+	
+}
+.tuijian{
+	margin: 30rpx 20rpx 0 20rpx;
+	font-size:36rpx;
+    font-weight: 700;
+
+}
+.titlebox{
+	
+	display: flex;
+	justify-content: space-between;
+	margin:0rpx 20rpx ;
+	font-size: 24rpx;
+	/* background-color: yellow; */
+	align-items: center;
+	
+}
+.more{
+	border: 1px solid grey;
+	padding: 8rpx 10rpx;
+	box-sizing: border-box;
+	border-radius: 40rpx;
+	display: flex;
+
+	
+}
+.more view
+{
+	margin: 0 10rpx;
+	
+	
+}
+.scrollview{
+	width: 100%;
+	height:270rpx;	
+	/* border: 1px solid red; */
+	display: flex;
+}
+
+.scrollviewlist
+{
+	width: 200rpx;
+	margin-left: 20rpx;
+	text-align: center;
+
+}
+.scrollviewlistimage
+{
+	width: 200rpx;
+	border-radius: 20rpx;
+}
+.scrollviewlist view
+{
+	font-size: 24rpx;
+	
+}
+
+/* 排行榜 */
+.phbswiperbox
+{
+	
+	height: 380rpx;
+}
+.swiperimage1
+{
+	
+	width: 80rpx;
+	height:  80rpx;
+	margin: 10rpx 20rpx;
+	border-radius: 10rpx;
+}
+.swiperlistbox1
+{
+	display: flex;
+	align-items: center;
+	
+	
+}
+.swiperitem{
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.swiperbox1
+{
+	font-size: 24rpx;
+	border: 1px solid rgb(204, 201, 201);
+	background-color: white;
+	margin: 10rpx 20rpx;
+	border-radius: 20rpx;
+}
+.swiperitemname1
+{color: blue;
+font-size: 32rpx;
+border-bottom: 1px solid gold;
+width: 90%;
+margin: 10rpx 20rpx;
+display: flex;
+justify-content: space-between;
+}
+.swiperitemname1 view
+{margin: 0 20rpx 0 0;
+}
+.swiperitemname1img
+{
+	width: 100rpx;
+	height: 60rpx;
+}
+.swipername1{
+ display: flex;
+ align-items: center;
+}
+
+.swipername1 view
+{
+margin:  0rpx 10rpx;
+}
+.nickname{
+	margin: 10rpx 0rpx 10rpx 20rpx;
+	font-size:36rpx;
+	font-weight: 700;
+	width: 50%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+.leida{
+	margin: 10rpx 0rpx 10rpx 0rpx;
+	font-size:36rpx;
+	font-weight: 700;
+	}  
+.titleboxld{
+	
+		display: flex;
+		justify-content: space-between;
+		margin:0rpx 20rpx ;
+		font-size: 24rpx;
+		/* background-color: yellow; */
+		align-items: center;
+		
+	}
+.leidabox
+{
+	display: flex;
+	/* border: 1px solid red; */
+	width: 70%;
+	align-items: center;
+	height: 80rpx;
+	line-height: 80rpx;
+
+}
+.ldmore
+{
+	display: flex;
+	border: 1px solid grey;
+	padding: 8rpx 10rpx;
+	box-sizing: border-box;
+	border-radius: 40rpx;
+}
+.ldmore view
+{
+	margin: 0 10rpx;
+	
+	
+}
+
+/* 播放器 */
+.playerbox
+{
+	width: 100%;
+	position: fixed;
+	
+	bottom: 10rpx;
+	background-color: rgb(226, 176, 233);
+	border-radius: 100rpx;
+}
+.infobox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+
+}
+.infoimage
+{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 100rpx;
+	flex: 1;
+}
+.info{
+	flex: 4;
+}
+.nameautho{
+	flex: 5;
+	margin-left: 20rpx;
+	font-size: 24rpx;
+}
+.imag2
+{
+	width: 60rpx;
+	height:60rpx;
+}
+.imag1
+{	width: 60rpx;
+	height:60rpx;
+
+}
+.player{
+	display: flex;
+	align-items: center;
+
+}
+.foot{
+	height: 120rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.playerbox
+{
+	width: 100%;
+	position: fixed;
+	bottom: 10rpx;
+	background-color: rgb(226, 176, 233);
+	border-radius: 100rpx;
+}
+.player
+{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.image1
+{
+	width: 60rpx;
+}
+.image2
+{
+	width: 100rpx;
+}

@@ -1,0 +1,46 @@
+.zhucebox{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid greenyellow;
+	display: flex;
+	flex-direction: column;
+	padding: 20rpx;
+	align-items: center;
+}
+.inpuut
+{
+	border: 1px solid black;
+	width: 400rpx;
+
+}
+.phonebox
+{
+	display: flex;
+	
+}
+.passbox
+{
+	display: flex;
+}
+.passwodbox{
+	display: flex;
+}
+.tishi
+{
+	text-align: center;
+	font-size: 25rpx;
+	margin: 10rpx 0;
+}
+.yanzhme{
+	margin-left: 300rpx;
+	background-color: yellow;
+	
+}
+.zhucebt
+{
+	text-align: center;
+	background-color: red;
+	width: 100rpx;
+	
+	margin-top: 20rpx;
+}
